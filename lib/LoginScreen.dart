@@ -25,7 +25,6 @@ class _LoginscreenState extends State<Loginscreen> {
   Widget build(BuildContext context) =>Scaffold(
                 body: SingleChildScrollView(
                    child: Column(
-
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Padding(
