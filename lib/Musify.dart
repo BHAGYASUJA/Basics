@@ -53,6 +53,7 @@ class _musicplayerState extends State<musicplayer> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: const Text("Musify.", style: TextStyle(
@@ -86,6 +87,7 @@ class _musicplayerState extends State<musicplayer> {
       ),
 
       body: Column(
+
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -96,6 +98,7 @@ class _musicplayerState extends State<musicplayer> {
           fontFamily: 'Hind',
           color: Colors.pink)),
       Container(
+        color: Colors.black,
         margin: EdgeInsets.all(15),
         child: CarouselSlider.builder(
           itemCount: images.length,
@@ -152,16 +155,17 @@ class _musicplayerState extends State<musicplayer> {
         height: 350,
         child:ListView.builder(itemBuilder: (context,index){
           return Card(
+            color: Colors.black,
             child: ListTile(
-              title: Text(title[index]),
-              subtitle: Text("${subtitle[index]}"),
+              title: Text(title[index],style:TextStyle(color: Colors.pink),),
+              subtitle: Text("${subtitle[index]}",style:TextStyle(color: Colors.pink)),
               leading: Image(image: AssetImage(image[index]),),
               trailing: Wrap(children: [
-                Icon(Icons.star),
+                Icon(Icons.star,color: Colors.pink,),
                 SizedBox(
                   width: 20,
                 ),
-                Icon(Icons.download),
+                Icon(Icons.download,color: Colors.pink,),
 
               ],),
             ),
