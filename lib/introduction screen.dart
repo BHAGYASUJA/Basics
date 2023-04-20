@@ -17,7 +17,7 @@ class intro extends StatefulWidget {
 }
 
 class _introState extends State<intro> {
-  PageDecoration pageDecoration = PageDecoration(
+  PageDecoration pageDecoration = const PageDecoration(
       titleTextStyle: TextStyle(
         fontSize: 30,
         fontWeight: FontWeight.bold,
