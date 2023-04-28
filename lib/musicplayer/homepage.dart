@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../musicui.dart';
 import 'database.dart';
-//import 'package:music_player_tutorial/database.dart';
-//import 'package:music_player_tutorial/musicPlayer.dart';
+
 
 class HomePage extends StatefulWidget {
   @override
