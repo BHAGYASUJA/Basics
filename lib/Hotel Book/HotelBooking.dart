@@ -161,9 +161,8 @@ class HotelBooking extends StatelessWidget {
           ],
         ),
       ),
-        Padding(
-            padding: const EdgeInsets.all(15.0),
-      child: Column(
+Padding(padding: EdgeInsets.all(15)),
+       Column(
        //   crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -175,7 +174,7 @@ class HotelBooking extends StatelessWidget {
                     ),
                   )
 
-                ]),),
+                ]),
 
             Align( alignment: Alignment.bottomCenter,
               child:Container(
@@ -185,15 +184,21 @@ class HotelBooking extends StatelessWidget {
                   return Card(
                     color: Colors.white,
                     child: ListTile(
-                      title: Text(hotelnames[i],style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
-                      subtitle: Text("${subname[i]}",style:TextStyle(color: Colors.black)),
+
+                      title: Text(hotelnames[i],
+                        style:TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
+
+                      subtitle: Text("${subname[i]}",
+                          style:TextStyle(color: Colors.black)),
+
                       leading: Image(image: NetworkImage(images[i]),),
+
                       trailing: Wrap(children: [
-                        //Icon(Icons.star,color: Colors.pink,),
                         TextButton(onPressed: (){}, style: TextButton.styleFrom(
                         foregroundColor: Colors.black,
                         elevation: 2,
-                        backgroundColor: Colors.white),
+                        backgroundColor: Colors.blue),
+
                      child: Text("Book")),
                         SizedBox(
                           width: 20,
@@ -226,10 +231,8 @@ class HotelBooking extends StatelessWidget {
              // onTap: _onItemTapped,
             ),
 
-          ])
-
-)
-
+    ])
+      )
     );
   }
 }
