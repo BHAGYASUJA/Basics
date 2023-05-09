@@ -1,7 +1,5 @@
 import 'package:device_preview/device_preview.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 void main() {
   runApp(DevicePreview(
     builder: (BuildContext context) => MaterialApp(
@@ -52,11 +50,11 @@ class _hotelpageState extends State<hotelpage> {
                       filled:true,
                     fillColor: Colors.white,
                     prefixIcon: Icon(Icons.search,size: 25,color: Colors.grey),
-                    hintText: "Buddha,Kathumandu",))],
+                    hintText: "Buddha,Kathumandu",)
+                )],
                   ),
                   ),
                 )
-              
             ),
       body: Column(
         children: [
@@ -77,7 +75,7 @@ class _hotelpageState extends State<hotelpage> {
                   )),
               ElevatedButton(onPressed: (){},style: ButtonStyle(backgroundColor: MaterialStateColor.resolveWith(
                       (states) => Color.fromARGB(255,242,139,4)),
-                  minimumSize: MaterialStateProperty.all(Size.square(100),)), 
+                  minimumSize: MaterialStateProperty.all(Size.square(100),)),
                   child: Column(
                     children: [
                       Icon(Icons.restaurant,size: 25,),

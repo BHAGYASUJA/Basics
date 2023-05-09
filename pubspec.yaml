@@ -34,6 +34,9 @@ dependencies:
   device_preview: ^1.1.0
   rive:
   introduction_screen: ^3.1.7
+  hive:
+  hive_flutter:
+  get:
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -49,6 +52,8 @@ dev_dependencies:
   carousel_slider: ^4.2.1
   flutter_custom_clippers: ^2.1.0
   google_maps_flutter: ^2.2.5
+  shared_preferences:
+  sqflite: ^2.2.7
 
 
   # The "flutter_lints" package below contains a set of recommended lints to

@@ -7,8 +7,8 @@ void main(){
 
 ///silvers scorllable
 class ListCustom extends StatelessWidget {
-  var data =["D1","D2","D3","D4","D5","D6","D7","D8","D9"];
-  var separate =["Item1","Item2","Item3","Item4","Item5","Item6","Item7","Item8","Item9"];
+ var data =["D1","D2","D3","D4","D5","D6","D7","D8","D9"];
+  var separate =["Item1","Item2", "Item3","Item4","Item5","Item6","Item7","Item8","Item9"];
 
 
   @override

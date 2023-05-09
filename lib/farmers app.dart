@@ -33,17 +33,7 @@ class _MyAppState extends State<MyApp> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // IconButton (
-              //   alignment: Alignment.topRight,
-              //   icon: const Icon(Icons.arrow_back,color: Colors.black,),
-              //   onPressed: () {
-              //   },
-              // ),
-              // Text("Kochi",textAlign:TextAlign.right),
-
-
-              Text("Farmers Fresh Zone",
-                style: TextStyle(fontSize: 25,
+              Text("Farmers Fresh Zone", style: TextStyle(fontSize: 25,
                     fontStyle:FontStyle.italic,
                     fontFamily: 'Open Sans',
                     color: Colors.indigo,
